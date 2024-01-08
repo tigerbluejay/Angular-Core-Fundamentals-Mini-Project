@@ -225,8 +225,20 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
+      <!-- title comes from the app.component.ts-->
+      <!-- any js is displayed between brackets -->
       <h1>Hello, {{ title }}</h1>
+      <h2> {{ data.title }} </h2>
       <p>Congratulations! Your app is running. 🎉</p>
+      <input class="demo" value="Test">
+      <!-- We can pass as a value to the input, the data in our model-->
+      <input class="demo" [value]="data.title">
+      <!-- we can also pass browser native events, here defined at the component level-->
+      <input class="demo" (click)="onLogoClicked()" [value]= "data.title">
+      <!-- with the hash sign we give the input a name, here: titleinput, also known as a template reference
+      and we pass it as an argument to the onKeyUp funcition, which triggers on the keyup browser event-->
+      <input class="demo" (keyup)="onKeyUp(titleinput.value)" [value]= "data.title" #titleinput>
+  
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
