@@ -20,11 +20,9 @@ export class AppComponent {
   onLogoClicked() {
     alert('Hello World!');
   }
-  // so here the onKeyUp function receives
-  // var newTitle and modifies the model
-  // object data.title (on all elements that use it)
-  // from 'This is a title also'
-  // to the title on the input object named #inputtitle
+  // so here the onKeyUp function receives var newTitle and 
+  // modifies the model object data.title (on all elements that use it)
+  // from 'This is a title also' to the title on the input object named #inputtitle
   onKeyUp(newTitle:string){
     this.data.title = newTitle;
   }

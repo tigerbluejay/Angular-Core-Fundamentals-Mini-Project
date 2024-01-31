@@ -231,7 +231,7 @@
       <h2> {{ data.title }} </h2>
       <p>Congratulations! Your app is running. 🎉</p>
       <input class="demo" value="Test">
-      <!-- We can pass as a value to the input, the data in our model-->
+      <!-- We can pass as a value to the input, the data from our model-->
       <input class="demo" [value]="data.title">
       <!-- we can also pass browser native events, here defined at the component level-->
       <input class="demo" (click)="onLogoClicked()" [value]= "data.title">
