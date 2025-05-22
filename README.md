@@ -26,23 +26,7 @@ Node.js (version 14 or higher)
 Angular CLI (version 17.0.9)
 Package Manager: npm or yarn
 
-## Getting Started
-### Clone the repository:
-git clone https://github.com/tigerbluejay/Angular-Core-Fundamentals-Mini-Project.git
-cd Angular-Core-Fundamentals-Mini-Project
-
-### Install dependencies:
-npm install
-# or
-yarn install
-
-### Run the development server:
-
-ng serve
-Navigate to http://localhost:4200/ in your browser. The application will automatically reload if you make changes to the source files.
-
 ## Project Structure
-
 src/ - Contains the main application source code, including components, services, and modules.
 server.ts - A custom server configuration file (if applicable).
 angular.json - Angular workspace configuration.
