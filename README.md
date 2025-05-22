@@ -1,31 +1,66 @@
-<<<<<<< HEAD
-# AngularCourse
+# Angular Core Fundamentals Mini Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+This repository serves as a foundational project accompanying the Angular University's Angular Core Deep Dive Introduction course. It is designed to help developers understand and apply core Angular concepts through practical implementation.
 
-## Development server
+The Angular Core Fundamentals Mini Project is a hands-on application built using Angular CLI version 17.0.9. It aims to reinforce key Angular principles such as component-based architecture, data binding, routing, and service integration. By working through this project, developers can gain a deeper understanding of Angular's core functionalities and best practices.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This Angular standalone component app serves as a learning or demonstration project focused on core Angular features. It includes a root component with basic interactivity—such as handling user input events to dynamically update the view model. The app routes are modularized (via app.routes.ts), and its structure follows Angular's modern standalone component approach, making it lightweight and educational. It’s ideal for understanding Angular fundamentals like data binding, event handling, routing, and component-driven architecture.
 
-## Code scaffolding
+## What you can learn directly from this project:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Data Binding
+In app.component.ts, you have a property data.title that is updated by the method onKeyUp(newTitle: string).
+This shows two-way interaction: the view updates when data.title changes, and user input updates the model through the event handler.
 
-## Build
+#### Event Handling
+The method onLogoClicked() triggers an alert when called.
+This shows how the component can respond to user events like clicks.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Component-driven architecture
+The root component AppComponent is a standalone component.
+It imports Angular core modules like CommonModule and RouterOutlet, demonstrating modular and reusable components.
+The component uses a template (app.component.html) and styles (app.component.css), illustrating separation of concerns.
 
-## Running unit tests
+### Prerequisites
+Node.js (version 14 or higher)
+Angular CLI (version 17.0.9)
+Package Manager: npm or yarn
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
+### Clone the repository:
+git clone https://github.com/tigerbluejay/Angular-Core-Fundamentals-Mini-Project.git
+cd Angular-Core-Fundamentals-Mini-Project
 
-## Running end-to-end tests
+### Install dependencies:
+npm install
+# or
+yarn install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Run the development server:
 
-## Further help
+ng serve
+Navigate to http://localhost:4200/ in your browser. The application will automatically reload if you make changes to the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Angular-Core-Fundamentals-Mini-Project
->>>>>>> 90c32cdabadca2460619e6b602bb41300166df51
+## Project Structure
+
+src/ - Contains the main application source code, including components, services, and modules.
+server.ts - A custom server configuration file (if applicable).
+angular.json - Angular workspace configuration.
+package.json - Lists project dependencies and scripts.
+tsconfig*.json - TypeScript configuration files.
+
+### Available Scripts
+ng serve - Compiles and serves the application, rebuilding on file changes.
+ng build - Compiles the application into an output directory.
+ng test - Runs unit tests via Karma.
+ng lint - Lints the codebase using defined linting rules.
+
+## Learning Objectives
+
+By engaging with this project, you will:
+
+- Understand the structure and organization of an Angular application.
+- Implement components, directives, and services.
+- Configure routing and navigation.
+- Manage state and data flow within the application.
+- Apply best practices for code organization and modularization.
