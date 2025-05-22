@@ -22,22 +22,22 @@ It imports Angular core modules like CommonModule and RouterOutlet, demonstratin
 The component uses a template (app.component.html) and styles (app.component.css), illustrating separation of concerns.
 
 ### Prerequisites
-Node.js (version 14 or higher)
-Angular CLI (version 17.0.9)
-Package Manager: npm or yarn
+- Node.js (version 14 or higher)
+- Angular CLI (version 17.0.9)
+- Package Manager: npm or yarn
 
 ## Project Structure
-src/ - Contains the main application source code, including components, services, and modules.
-server.ts - A custom server configuration file (if applicable).
-angular.json - Angular workspace configuration.
-package.json - Lists project dependencies and scripts.
-tsconfig*.json - TypeScript configuration files.
+- src/ - Contains the main application source code, including components, services, and modules.
+- server.ts - A custom server configuration file (if applicable).
+- angular.json - Angular workspace configuration.
+- package.json - Lists project dependencies and scripts.
+- tsconfig*.json - TypeScript configuration files.
 
 ### Available Scripts
-ng serve - Compiles and serves the application, rebuilding on file changes.
-ng build - Compiles the application into an output directory.
-ng test - Runs unit tests via Karma.
-ng lint - Lints the codebase using defined linting rules.
+- ng serve - Compiles and serves the application, rebuilding on file changes.
+- ng build - Compiles the application into an output directory.
+- ng test - Runs unit tests via Karma.
+- ng lint - Lints the codebase using defined linting rules.
 
 ## Learning Objectives
 
